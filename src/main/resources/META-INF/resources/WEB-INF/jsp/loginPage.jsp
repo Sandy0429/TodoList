@@ -56,18 +56,20 @@
           class="img-fluid" alt="Phone image">
       </div>
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 mt-4">
-        <form>
+        <form method="post">
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <input type="email" id="form1Example13" class="form-control form-control-lg border border-secondary" />
-            <label class="form-label " for="form1Example13">Email address</label>
+            <input name="email" type="text" id="form1Example13" class="form-control form-control-lg border border-secondary" />
+            <label class="form-label " for="form1Example13">Name</label>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-            <input type="password" id="form1Example23" class="form-control form-control-lg border border-secondary" />
+            <input name="password" type="password" id="form1Example23" class="form-control form-control-lg border border-secondary" />
             <label class="form-label " for="form1Example23">Password</label>
           </div>
+          
+          <label name ="errorMessage" class="form-check-label" for="form1Example3"> ${errorMessage }</label>
 
           <div class="d-flex justify-content-around align-items-center mb-4">
             <!-- Checkbox -->
@@ -97,6 +99,8 @@
       </div>
     </div>
   </div>
+  
+  ${name } Name.
 </section>
 
 <script>
